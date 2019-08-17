@@ -1,0 +1,14 @@
+.mixin.out/
+crash-report/
+libraries/
+llibrary/
+log/
+patchouli_books/
+saves/
+scripts/
+world/
+crafttweaker.log
+options.txt
+opionsof.txt
+patchouli_data.json
+servers.dat
