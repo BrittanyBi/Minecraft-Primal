@@ -1,0 +1,109 @@
+
+#Torch Burn Duration
+[torch_duration]
+	#  ''''''''''''''''''''''''''''''
+	#  Age required before torch degrades. A value of 5 means a torch remains in that state for 7 minutes on average. 0 = Infinite
+	#  ..............................
+	#Flimsy Torch Age (Default: 5)
+	#Range: 0 ~ 15
+	flimsyTorchAge = 30
+	#Used Torch Age (Default: 5)
+	#Range: 0 ~ 15
+	usedTorchAge = 20
+	#Smoldering Torch Age (Default: 5)
+	#Range: 0 ~ 15
+	smolderingTorchAge = 10
+
+#Other Torches
+[other_torches]
+	#  ''''''''''''''''''''''''''''''
+	#  List of torches from other mods to be replaced by flimsy torches if generated.
+	#  ..............................
+	#Ground torches to be replaced
+	otherGroundTorches = ["othermod:other_torch", "anothermod:another_torch"]
+	#Wall torches to be replaced
+	otherWallTorches = ["othermod:other_wall_torch", "anothermod:another_wall_torch"]
+
+#General Settings
+[general]
+	#  ''''''''''''''''''''''''''''''
+	#  Chance of a generated torch to remain a regular, non-flimsy torch. A value of 0.01 equals 1%.
+	#  Setting this to 0 or 1 bypasses random checks, slightly improving performance.
+	#  ..............................
+	#Chance Lucky Torch (Default: 0.01)
+	#Range: 0.0 ~ 1.0
+	chanceLuckyTorch = 0.01
+	#  ''''''''''''''''''''''''''''''
+	#  Chance of a generated lantern to remain a regular, non-flimsy lantern. A value of 0.01 equals 1%.
+	#  Setting this to 0 or 1 bypasses random checks, slightly improving performance.
+	#  ..............................
+	#Chance Lucky Lantern (Default: 0.0)
+	#Range: 0.0 ~ 1.0
+	chanceLuckyLantern = 0.0
+	#  ''''''''''''''''''''''''''''''
+	#  Destroy torches when they burn out.
+	#  ..............................
+	#Destroy Burnt Out Torches (Default: true)
+	destroyBurntOutTorches = false
+	#  ''''''''''''''''''''''''''''''
+	#  Campfires start lit when placed down.
+	#  ..............................
+	#Campfires Start Lit (Default: true)
+	campfiresStartLit = true
+	#  ''''''''''''''''''''''''''''''
+	#  Allow Blazing Campfires to spread fire to nearby blocks.
+	#  ..............................
+	#Allow Fire Spread (Default: true)
+	allowFireSpread = true
+
+#Villager Torch Behavior
+[villager_torch_behavior]
+	#  ''''''''''''''''''''''''''''''
+	#  Interval between each attempt to replace a torch. A value of 20 equals 1 second.
+	#  ..............................
+	#Torch Replace Interval. (Default: 100)
+	#Range: > 1
+	torchReplaceInterval = 100
+	#Defines which torch types villagers are allowed to replace. Lower condition torches are prioritized first.
+	#Allow villagers to replace Burnt Out torches (Default: true)
+	allowBurntOutReplacement = true
+	#Allow villagers to replace Smoldering Torches (Default: true)
+	allowSmolderingReplacement = true
+	#Allow villagers to replace Used Torches (Default: false)
+	allowUsedReplacement = false
+
+#Campfire Burn Duration
+[campfire_duration]
+	#  ''''''''''''''''''''''''''''''
+	#  Age required before campfire degrades. A value of 9 means a torch remains in that state for 10 minutes on average. 0 = Infinite
+	#  ..............................
+	#Blazing Campfire Age (Default: 9)
+	#Range: 0 ~ 100
+	blazingCampfireAge = 100
+	#Flimsy Campfire Age (Default: 9)
+	#Range: 0 ~ 100
+	flimsyCampfireAge = 100
+	#Dwindling Campfire Age (Default: 9)
+	#Range: 0 ~ 100
+	dwindlingCampfireAge = 100
+	#Smoldering Campfire Age (Default: 9)
+	#Range: 0 ~ 100
+	smolderingCampfireAge = 100
+
+#Lantern Duration Multiplier
+[lantern_multiplier]
+	#  ''''''''''''''''''''''''''''''
+	#  Multiplier affecting the burn duration of torches placed in lanterns. A value of 1.5 extends the lifetime by 50%. 0 = Infinite
+	#  ..............................
+	#Lantern Age Multiplier (Default: 1.5)
+	#Range: 0.0 ~ 100.0
+	lanternDurationMultiplier = 15
+
+#Other Campfire Fuel
+[other_campfire_fuel]
+	#  ''''''''''''''''''''''''''''''
+	#  List of items that can be used as fuel for Campfires, in addition to planks and logs.
+	#  ..............................
+	#Other items to use as campfire fuel and quantity needed to upgrade campfire's state (separated by comma)
+	otherCampfireFuel = ["minecraft:some_item,16", "othermod:other_item,2"]
+
